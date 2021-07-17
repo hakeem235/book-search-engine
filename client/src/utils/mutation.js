@@ -7,11 +7,11 @@ mutation addUser($username: String!, $email: String!, $password: String!) {
     user {
       _id
       username
-      email
     }
   }
 }
 `;
+// email
 
 export const LOGIN_USER = gql`
 mutation login ($email: String!, $password: String!){
@@ -20,11 +20,11 @@ mutation login ($email: String!, $password: String!){
     user {
       _id
       username
-      email
     }
   }
 }
 `;
+// email
 
 export const SAVE_BOOK= gql`
 mutation saveBook($bookData: BookInput!) {

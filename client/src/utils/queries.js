@@ -67,7 +67,7 @@ query getSingleBook($bookId: ID!) {
 `;
 
 export const GET_ME = gql`
-query me {
+{
   me{
     _id
     username
@@ -75,10 +75,10 @@ query me {
     savedBooks {
       bookId
       authors
-      title
-      description
-      link
       image
+      description
+      title
+      link
     }
   }
 }`;
